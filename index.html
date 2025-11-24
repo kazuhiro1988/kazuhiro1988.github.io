@@ -5,8 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet">
     <title>kazuhiro1988のポートフォリオ</title>
+    <style>
+      body {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.8;
+        color: #333;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+      .container {
+        background: white;
+        border-radius: 20px;
+        padding: 50px;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      }
+      h1 {
+        color: #667eea;
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        border-bottom: 4px solid #667eea;
+        padding-bottom: 15px;
+      }
+      h2 {
+        color: #764ba2;
+        font-size: 2em;
+        margin-top: 40px;
+        padding-left: 15px;
+        border-left: 5px solid #764ba2;
+      }
+      h3 {
+        color: #667eea;
+        font-size: 1.5em;
+        margin-top: 30px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #e0e0e0;
+      }
+      img {
+        border-radius: 50%;
+        border: 5px solid #667eea;
+        box-shadow: 0 10px 30px rgba(102,126,234,0.3);
+        margin: 20px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+      th {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 15px;
+        text-align: left;
+        font-weight: bold;
+      }
+      td {
+        padding: 15px;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      ul li {
+        padding: 8px 0 8px 25px;
+        position: relative;
+      }
+      ul li:before {
+        content: "▸";
+        color: #667eea;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+      }
+      a {
+        color: #667eea;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+      a:hover {
+        color: #764ba2;
+        text-decoration: underline;
+      }
+      iframe {
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        margin: 20px 0;
+      }
+      .notice {
+        background: #f0f4ff;
+        border-left: 4px solid #667eea;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+        font-style: italic;
+        color: #555;
+      }
+    </style>
   </head>
   <body>
+    <div class="container">
     <h1>kazuhiro1988</h1>
     <img src="d9f2a0f7-private.png" width="280">
     <h2>About</h2>
@@ -40,7 +144,7 @@
     </table>
 
     <h3>Works</h3>
-    <p>アピールできる活動内容を書きましょう。</p>
+    <div class="notice">現在、プログラミング学習中のため、具体的な制作物はまだありません。今後、作品が完成次第こちらに掲載予定です。</div>
     <ul>
       <li><a href="https://github.com/">GitHub</a></li>
       <li><a href="https://qiita.com/">Qiita</a></li>
@@ -64,5 +168,6 @@
  
     <h3>Open Processing</h3>
     <iframe src="https://openprocessing.org/sketch/2804710/embed/" width="640" height="360"></iframe>  
+    </div>
   </body>
 </html>
